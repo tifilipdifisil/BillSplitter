@@ -1,6 +1,6 @@
 
 h2 {
-    font-family:"Helvetica Neue";
+    font-family: "Helvetica Neue";
     font-size: 30px;
     padding: 1.5em;
     margin: 25px 50px 0px 100px;
@@ -8,9 +8,7 @@ h2 {
 
 }
 
-
-
-img{
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -29,15 +27,13 @@ img{
 
 }
 
-.box1 .form{
+.box1 .form {
     width: 100px;
     margin: 30px 500px 30px 100px;
-    background-color: hsla(360, 100%, 100%,  0.65);
+    background-color: hsla(360, 100%, 100%, 0.65);
     font: bold 12px sans-serif;
 
 }
-
-
 
 .box1 .form .form-row > label {
     display: block;
@@ -47,8 +43,8 @@ img{
 
 }
 
-.box1 .form input{
-    color:  #5f5f5f;
+.box1 .form input {
+    color: #5f5f5f;
     box-sizing: border-box;
     width: 120px;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -56,9 +52,9 @@ img{
     border: 1px solid #dbdbdb;
 }
 
-.box1 .form select{
+.box1 .form select {
     background-color: #ffffff;
-    color:  #5f5f5f;
+    color: #5f5f5f;
     box-sizing: border-box;
     width: 75px;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -66,8 +62,7 @@ img{
     border: 1px solid #dbdbdb;
 }
 
-
-.box1 .form .radio-buttons input{
+.box1 .form .radio-buttons input {
 
     width: auto;
     margin-bottom: 10px;

@@ -1,6 +1,6 @@
 <?php
 require('helpers.php');
-require ('billsplitterlogic.php');
+require('billsplitterlogic.php');
 ?>
 
 <!doctype html>
@@ -26,12 +26,12 @@ require ('billsplitterlogic.php');
 
         <div class='form-row'>
             <label name='tabtotal'> Enter Tab </label>
-            <input type='text' name='tabtotal' placeholder='Enter the Tab Total'>
+            <input type='text' name='tabtotal' value='<?= $form->prefill('tabtotal', '') ?>'>
         </div>
         <br>
         <div class='form-row'>
             <label name='tabsplit'> Tab Sharing </label>
-            <input type='text' name='tabsplit' placeholder='How many People?'>
+            <input type='text' name='tabsplit'  value='<?= $form->prefill('tabsplit', '') ?>'>
         </div>
 
         <br>
@@ -56,12 +56,26 @@ require ('billsplitterlogic.php');
         </div>
 
         <button type='submit' class='btn btn-primary btn-small'> Calculate</button>
-         <br>
+        <br>
         <h3>
-           Each Person Final Tab is  <?= sanitize( $result) ?>
+            Each Person Final Tab is <?= sanitize($result) ?>
         </h3>
 
     </form>
+
+    <?php if ($form->hasErrors) : ?>
+        <div class='alert'>
+            <ul>
+                <?php foreach ($errors as $error) : ?>
+                    <li><?= $error ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php endif ?>
+
+
+
+
 
 </div>
 
